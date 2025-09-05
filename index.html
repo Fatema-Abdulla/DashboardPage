@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Application Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+  </head>
+  <body>
+    <section id="sideMenu">
+      <nav>
+        <a href="#" class="active"><i class="fa-solid fa-chart-pie"></i> Dashboard</a>
+        <a href="#"><i class="fa-solid fa-box"></i> Products</a>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i> Orders</a>
+        <a href="#"><i class="fa-solid fa-user-group"></i> Customers</a>
+        <a href="#"><i class="fa-solid fa-file-lines"></i> Reports</a> 
+        <hr class="hr-line">
+        <a href="#"><i class="fa-solid fa-circle-info"></i> Help</a>
+        <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+      </nav>
+    </section>
+
+    <header>
+      <div class="search-bar">
+         <input type="text" name="search bar" value="Search">
+         <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <div class="employee-field">
+        <a href="#" class="notification">
+          <i class='far fa-bell'></i>
+          <span class="circle-num">3</span>
+        </a>
+        <a href="#">
+          <div class="profile-img"> </div>
+          <i class="fa-solid fa-caret-down"></i>
+        </a>
+      </div>
+    </header>
+
+    <section id="page-content">
+      <div class="heading">
+        <h1>Dashboard</h1>
+        <p>Store Performance Summary</p>
+      </div>
+
+      <div class="top-cards">
+        <!-- card 1 -->
+        <div class="card col-md-6">
+          <div class="col-1">
+            <div class="card-titles">Total Sales</div>
+            <div class="card-num">BD400</div>  
+          </div>
+          <div class="col-2">
+            <div class="card-icons">
+              <i class="fas fa-donate"></i>  
+            </div>
+            <div class="card-status">
+              <h5 class="first-h5">+3.35%</h5>
+              <p>vs last month</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- card 2 -->
+        <div class="card col-md-6">
+          <div class="col-1">
+            <div class="card-titles">Total Orders</div>
+            <div class="card-num">2,730</div>  
+          </div>
+          <div class="col-2">
+            <div class="card-icons">
+              <i class="fa-solid fa-cart-shopping"></i>  
+            </div>
+            <div class="card-status">
+              <h5 class="min">-1.62%</h5>
+              <p>vs last month</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="card col-md-6">
+          <div class="col-1">
+            <div class="card-titles">Revenue</div>
+            <div class="card-num">20,580</div>  
+          </div>
+          <div class="col-2">
+            <div class="card-icons">
+              <i class="fa-solid fa-money-bills"></i>  
+            </div>
+            <div class="card-status">
+              <h5 class="third-h5">+0.52%</h5>
+              <p>vs last month</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 4 -->
+        <div class="card col-md-6">
+          <div class="col-1">
+            <div class="card-titles">Total Visitors</div>
+            <div class="card-num">32,100</div>  
+          </div>
+          <div class="col-2">
+            <div class="card-icons">
+              <i class="fa-solid fa-user-large"></i>  
+            </div>
+            <div class="card-status">
+              <h5 class="four-h5">+4.41%</h5>
+              <p>vs last month</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class ="tables">
+        <div class="table-product">
+          <h2> Top Selling Products </h2>
+          <table class="table1">
+            <thead class="heading-table">
+              <tr>
+                <th>Product</th>
+                <th>Category</th>
+                <th>Gender</th>
+                <th>Price</th>
+                <th>Total Items</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Striped Cotton Polo Shirt</td>
+                <td>T-shirt</td>
+                <td>Boys</td>
+                <td>BD4,000</td>
+                <td>120</td>
+              </tr>
+
+              <tr>
+                <td>Textured Crossbody Bag with Chain Strap</td>
+                <td>Bags</td>
+                <td>Woman</td>
+                <td>BD10,000</td>
+                <td>98</td>
+              </tr>
+
+              <tr>
+                <td>Ombre Lace-Up Sport Shoes</td>
+                <td>Shoes</td>
+                <td>Man</td>
+                <td>BD32,000</td>
+                <td>63</td>
+              </tr>
+
+              <tr>
+                <td>Pack of 6 - Embellished Sliver Rings</td>
+                <td>Jewellery</td>
+                <td>Woman</td>
+                <td>BD120,000</td>
+                <td>57</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="table-data">
+          <h2> Orders Status </h2>
+          <div class="shapes">
+            <img src="assets/shape1.png" class="shape1" />
+            <img src="assets/shape2.png" class="shape2" />
+            <img src="assets/shape3.png" class="shape3" />
+          </div>
+          <table class="table2">
+            <tbody>
+                <td> <i class="fa-solid fa-circle circle1"></i> Received </td>
+                <td class="data-num">60%</td>
+              </tr>
+
+              <tr>
+                <td> <i class="fa-solid fa-circle circle2"></i> Pending </td>
+                <td class="data-num">30%</td>
+              </tr>
+
+              <tr>
+                <td> <i class="fa-solid fa-circle circle3"></i> Cancelled </td>
+                <td class="data-num">10%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
